@@ -1,4 +1,4 @@
-{{#get "posts" filter="featured:true" limit="all" as |featured|}}
+{{#get "posts" filter="featured:true" limit="all" order="published_at asc" as |featured|}}
 {{#if featured}}
     <div class="gh-outer">
     <section class="featured-wrapper gh-inner">
