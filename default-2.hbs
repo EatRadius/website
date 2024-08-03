@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>{{meta_title}}</title>
 
     <link rel="stylesheet" href="{{asset "built/screen.css"}}">
@@ -16,21 +17,13 @@
 
 {{> "header"}}
 
-    {{#is "home"}}
-        {{> "cover"}}
-        {{> "description"}}
-        {{> "3-grid"}}
-        {{!-- {{#if @custom.show_featured_posts}}
-            {{> "featured-posts"}}
-        {{/if}} --}}
-    {{/is}}
 
     {{#is "blog"}}
-        {{> "cover2"}}
+            {{> "cover2"}}
         {{#if @custom.show_featured_posts}}
             {{> "featured-posts"}}
         {{/if}}
-    {{/is}}
+        {{/is}}
 
     <div class="site-content">
         {{{body}}}
@@ -53,7 +46,7 @@
 </script>
 
 <script src="{{asset "built/main.min.js"}}"></script>
-{{{block "scripts"}}}
+
 {{ghost_foot}}
 
 </body>

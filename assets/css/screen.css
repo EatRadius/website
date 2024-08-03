@@ -20,3 +20,7 @@
 @import "misc/utils.css";
 @import "misc/portal.css";
 @import "misc/animations.css";
+@import "new/description.css";
+@import "new/3-grid.css";
+@import "site/footer.css";
+@import "site/cover2.css";

@@ -1,55 +1,87 @@
 .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 36px;
-    padding: 0 15px;
-    font-family: var(--font-base);
-    font-size: 11px;
-    font-weight: 800;
-    color: var(--brand-color);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    background-color: var(--white-color);
-    border: 1px solid var(--light-gray-color);
-    border-radius: 3px;
-    outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-demi);
+  font-size: 20px !important;
+  font-weight: 400;
+  color: var(--cream-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background-color: var(--radius-color);
+  border: none;
+  outline: none;
+  max-height: 60px;
+  max-width: 198px;
+  padding: 15px 32px;
 }
 
 .button:hover {
-    border-color: var(--mid-gray-color);
-    opacity: 1;
+  border-color: var(--mid-gray-color);
+  opacity: 1;
+}
+
+.button a {
+  color: var(--cream-color);
 }
 
 .button-secondary {
-    color: var(--darker-gray-color);
+  color: var(--cream-color);
 }
 
 .button-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    color: var(--darker-gray-color);
-    cursor: pointer;
-    background-color: transparent;
-    border: 0;
-    outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  color: var(--darker-gray-color);
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  outline: none;
 }
 
 .button-icon:hover .icon {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .button-text {
-    padding: 0;
-    line-height: inherit;
-    color: var(--darker-gray-color);
-    cursor: pointer;
-    background-color: transparent;
-    border: 0;
-    outline: none;
+  padding: 0;
+  line-height: inherit;
+  color: var(--cream-color);
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.gh-primary-btn {
+  background-color: var(--squash-color);
+  width: 178px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.gh-btn {
+  align-items: center;
+  border: 0;
+  color: var(--jam-color);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 0.4em;
+  justify-content: center;
+  letter-spacing: inherit;
+  line-height: 1;
+  border-radius: 0;
+  text-align: center;
+  font-family: var(--font-demi);
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }

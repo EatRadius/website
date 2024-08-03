@@ -1,18 +1,36 @@
 .site {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .site-content {
-    flex-grow: 1;
-    padding: 6vmin 0;
+  flex-grow: 1;
+  padding: 6vmin 0;
 }
 
 .is-head-brand .site-content {
-    padding-top: max(8vmin, 5rem);
+  padding-top: max(8vmin, 5rem);
 }
 
 .page-template .site-content {
-    padding-block: 0;
+  padding-block: 0;
+}
+
+.gh-canvas,
+.kg-width-full.kg-content-wide {
+  display: block;
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.gh-outer {
+  padding: 0 5rem;
+}
+
+@media (max-width: 767px) {
+  .gh-outer {
+    padding: 0 !important;
+  }
 }
