@@ -44,3 +44,53 @@
   height: 60px;
   width: 178px;
 }
+
+.gh-head-btn.gh-btn {
+  background-color: var(--squash-color);
+  color: var(--jam-color);
+  font-size: 20px;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.is-head-brand:not(.is-head-transparent) .gh-head-btn {
+  background-color: var(--squash-color);
+  color: var(--jam-color);
+  flex-shrink: 0;
+  height: 60px;
+  width: 178px;
+}
+.is-head-brand:not(.is-head-transparent) .gh-head-btn {
+  background-color: #fff;
+  color: #15171a;
+}
+.gh-head-btn.gh-btn {
+  font-size: inherit;
+  font-weight: 600;
+}
+.gh-btn {
+  align-items: center;
+  border: 0;
+  border-radius: 0;
+  color: var(--jam-color);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--font-demi);
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 600;
+  gap: 0.4em;
+  justify-content: center;
+  letter-spacing: inherit;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.gh-primary-btn {
+  background-color: var(--squash-color);
+  flex-shrink: 0;
+  height: 60px;
+  width: 178px;
+}
