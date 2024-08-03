@@ -1,21 +1,46 @@
 .is-head-left-logo .gh-head-inner {
-    grid-template-columns: 1fr 50% 1fr;
+  grid-template-columns: 1fr 50% 1fr;
 }
 
 .gh-head-logo {
-    font-size: 2.2rem;
-    font-weight: 800;
+  font-size: 2.2rem;
+  font-weight: 800;
 }
 
 .gh-head-menu,
 .gh-head-actions {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 @media (min-width: 992px) {
-    .is-head-left-logo .gh-head-menu {
-        justify-content: center;
-        margin: 0;
-    }
+  .is-head-left-logo .gh-head-menu {
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+.is-head-brand:not(.is-head-transparent) .gh-head {
+  background-color: var(--cream-color);
+}
+
+.is-head-transparent .gh-search {
+  color: black;
+}
+
+.gh-head-menu .nav a {
+  color: #bd4735 !important;
+  font-family: var(--font-demi);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.is-head-brand:not(.is-head-transparent) .gh-head-btn {
+  background-color: var(--squash-color);
+  color: var(--jam-color);
+  flex-shrink: 0;
+  height: 60px;
+  width: 178px;
 }
