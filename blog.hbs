@@ -1,0 +1,22 @@
+{{!< default-2}} <main class="site-main">
+
+    <header class="feed-header gh-canvas">
+        {{#if @custom.feed_title}}
+        <div class="feed-header-wrapper">
+            <h2 class="feed-header-title">The Latest</h2>
+        </div>
+        {{/if}}
+    </header>
+
+    <div class="post-feed expanded gh-feed gh-canvas">
+        {{#foreach posts}}
+        {{> "loop"}}
+        {{/foreach}}
+    </div>
+
+    {{pagination}}
+
+    </main>
+
+    {{#contentFor "body_class"}}{{#if @site.cover_image}} with-full-cover{{/if}}{{#if @member}}
+    logged-in{{/if}}{{/contentFor}}

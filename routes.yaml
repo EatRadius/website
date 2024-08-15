@@ -1,0 +1,12 @@
+routes:
+  /:
+    controller: channel
+    template: index
+
+collections:
+  /blog/:
+    permalink: /{slug}/
+    template: blog
+    limit: 10
+
+taxonomies:
