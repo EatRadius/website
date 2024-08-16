@@ -1,55 +1,60 @@
 .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 36px;
-    padding: 0 15px;
-    font-family: var(--font-base);
-    font-size: 11px;
-    font-weight: 800;
-    color: var(--brand-color);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    background-color: var(--white-color);
-    border: 1px solid var(--light-gray-color);
-    border-radius: 3px;
-    outline: none;
+  align-items: center;
+  background-color: var(--radius-color);
+  border: none;
+  color: var(--cream-color);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--font-demi);
+  font-size: 20px !important;
+  font-weight: 400;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  max-height: 60px;
+  max-width: 198px;
+  outline: none;
+  padding: 15px 32px;
+  text-transform: uppercase;
 }
 
 .button:hover {
-    border-color: var(--mid-gray-color);
-    opacity: 1;
+  border-color: var(--mid-gray-color);
+  opacity: 1;
 }
 
 .button-secondary {
-    color: var(--darker-gray-color);
+  color: var(--darker-gray-color);
 }
 
 .button-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    color: var(--darker-gray-color);
-    cursor: pointer;
-    background-color: transparent;
-    border: 0;
-    outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  color: var(--darker-gray-color);
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  outline: none;
 }
 
 .button-icon:hover .icon {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .button-text {
-    padding: 0;
-    line-height: inherit;
-    color: var(--darker-gray-color);
-    cursor: pointer;
-    background-color: transparent;
-    border: 0;
-    outline: none;
+  padding: 0;
+  line-height: inherit;
+  color: var(--darker-gray-color);
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.button a,
+.button-secondary {
+  color: var(--cream-color);
 }

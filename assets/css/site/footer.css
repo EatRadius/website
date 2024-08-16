@@ -1,0 +1,9 @@
+footer {
+  background-color: var(--radius-color);
+  color: var(--cream-color);
+}
+
+.gh-copyright,
+.gh-foot a {
+  color: var(--cream-color);
+}
