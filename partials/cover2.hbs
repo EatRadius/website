@@ -1,23 +1,9 @@
-<div class="image-container">
-    <img src="{{@site.cover_image}}" alt="image">
-    <div class="overlay-text">Farm-to-table butcher & grocery in East Austin</div>
-</div>
+<div class="cover2 gh-outer">
 
 
-
-
-{{!-- <div class="cover{{#if @site.cover_image}} image-loading{{/if}}{{#match @custom.publication_cover_style " Half
-    screen"}} half{{/match}} gh-outer">
-    {{#if @site.cover_image}}
-    <img class="cover-image u-object-fit" src="{{@site.cover_image}}" alt="{{@site.title}}">
-    {{/if}}
-
-    <div class="cover-content">
-        <div class="cover-description">
-            <p>Farm-to-table butcher & grocery in East Austin</p>
-        </div>
+    <div class="cover2-content">
         {{#if @site.description}}
-        <div class="cover-description">
+        <div class="cover2-description">
             {{#unless @member}}
             {{#if @custom.email_signup_text}}
             {{@custom.email_signup_text}}
@@ -33,7 +19,7 @@
         {{#if @site.members_enabled}}
         {{#unless @site.members_invite_only}}
         {{#unless @member}}
-        <form class="form-wrapper cover-form" data-members-form>
+        <form class="form-wrapper cover2-form" data-members-form>
             <input class="auth-email" type="email" data-members-email placeholder="Your email address" required="true"
                 autocomplete="false">
             <button class="form-button" type="submit" aria-label="Submit">
@@ -47,7 +33,7 @@
         {{/if}}
     </div>
 
-    <button class="button-icon cover-arrow">
+    <button class="button-icon cover2-arrow">
         {{> "icons/caret-down"}}
     </button>
-</div> --}}
+</div>
