@@ -23,6 +23,7 @@ projectFilesBackup
 
 dist/
 
+# Test
 config.json
 changelog.md
 changelog.md.bk
