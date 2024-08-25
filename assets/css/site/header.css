@@ -106,11 +106,16 @@
 
 .gh-head-menu .nav a {
   font-family: var(--font-demi);
-  color: #bd4735 !important;
+  color: var(--cream-color) !important;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+}
+
+.is-head-transparent .gh-head-btn {
+    background-color: var(--squash-color);
+    color: var(--jam-color);
 }
 
 @media (max-width: 767px) {

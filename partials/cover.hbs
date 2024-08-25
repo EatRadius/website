@@ -1,22 +1,22 @@
-<div class="image-container">
+{{!-- <div class="image-container">
     <img src="{{@site.cover_image}}" alt="image">
     <div class="overlay-text">Farm-to-table butcher & grocery in East Austin</div>
-</div>
+</div> --}}
 
 
 
 
-{{!-- <div class="cover{{#if @site.cover_image}} image-loading{{/if}}{{#match @custom.publication_cover_style " Half
-    screen"}} half{{/match}} gh-outer">
+<div class="cover{{#if @site.cover_image}} image-loading{{/if}}{{#match @custom.publication_cover_style " Half screen"}}
+    half{{/match}} gh-outer">
     {{#if @site.cover_image}}
     <img class="cover-image u-object-fit" src="{{@site.cover_image}}" alt="{{@site.title}}">
     {{/if}}
 
     <div class="cover-content">
         <div class="cover-description">
-            <p>Farm-to-table butcher & grocery in East Austin</p>
+            <p style="font-size:48px;max-width:514px">Farm-to-table butcher & grocery in East Austin</p>
         </div>
-        {{#if @site.description}}
+        {{!-- {{#if @site.description}}
         <div class="cover-description">
             {{#unless @member}}
             {{#if @custom.email_signup_text}}
@@ -28,7 +28,7 @@
             {{@site.description}}
             {{/unless}}
         </div>
-        {{/if}}
+        {{/if}} --}}
 
         {{#if @site.members_enabled}}
         {{#unless @site.members_invite_only}}
@@ -50,4 +50,4 @@
     <button class="button-icon cover-arrow">
         {{> "icons/caret-down"}}
     </button>
-</div> --}}
+</div>

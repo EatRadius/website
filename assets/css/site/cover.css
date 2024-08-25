@@ -3,7 +3,6 @@ body:not(.with-full-cover) .cover {
 }
 
 .with-full-cover .cover {
-  top: 122px;
   position: relative;
   display: flex;
   height: 100vh;

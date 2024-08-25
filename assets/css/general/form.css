@@ -45,6 +45,7 @@ textarea {
 }
 
 .form-button {
+    font-family: var(--font-demi);
     position: absolute;
     top: 5px;
     right: 5px;
@@ -55,10 +56,10 @@ textarea {
     padding: 0 15px;
     font-size: 1.3rem;
     font-weight: 800;
-    color: var(--white-color);
+    color: var(--cream-color);
     text-transform: uppercase;
     cursor: pointer;
-    background-color: var(--brand-color);
+    background-color: var(--radius-color);
     border: 0;
     border-radius: 4px;
     outline: none;
