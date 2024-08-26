@@ -29,7 +29,7 @@
 }
 
 .gh-head-menu .nav a {
-  color: #bd4735 !important;
+  color: var(--cream-color);
   font-family: var(--font-demi);
   font-size: 20px;
   font-weight: 600;
@@ -37,12 +37,8 @@
   text-transform: uppercase;
 }
 
-.is-head-brand:not(.is-head-transparent) .gh-head-btn {
-  background-color: var(--squash-color);
-  color: var(--jam-color);
-  flex-shrink: 0;
-  height: 60px;
-  width: 178px;
+.is-head-transparent .gh-head .nav>li a, .is-head-transparent .gh-head-description, .is-head-transparent .gh-head-link, .is-head-transparent .gh-head-logo, .is-head-transparent .gh-head-logo a, .is-head-transparent .gh-search, .is-head-transparent .gh-social, .is-head-transparent .nav-more-toggle {
+    color: var(--cream-color);
 }
 
 .gh-head-btn.gh-btn {
@@ -54,8 +50,8 @@
 }
 
 .is-head-brand:not(.is-head-transparent) .gh-head-btn {
-  background-color: var(--squash-color);
-  color: var(--jam-color);
+  background-color: var(--squash-color) !important;
+  color: var(--jam-color) !important;
   flex-shrink: 0;
   height: 60px;
   width: 178px;
@@ -93,4 +89,13 @@
   flex-shrink: 0;
   height: 60px;
   width: 178px;
+}
+
+.gh-head-logo img {
+  max-height: 61px;
+}
+
+.is-head-transparent .gh-head-btn {
+    background-color: var(--squash-color) !important;
+    color: var(--jam-color) !important;
 }

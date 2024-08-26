@@ -1,5 +1,5 @@
 {
-    "name": "edition",
+    "name": "radius-old-theme",
     "description": "A clean, minimal newsletter theme for the Ghost publishing platform",
     "version": "1.0.0",
     "private": true,
@@ -63,10 +63,7 @@
                 ],
                 "default": "Modern sans-serif"
             },
-            "email_signup_text": {
-                "type": "text",
-                "group": "homepage"
-            },
+
             "publication_cover_style": {
                 "type": "select",
                 "options": [
@@ -101,16 +98,6 @@
                 ],
                 "default": "Expanded",
                 "group": "homepage"
-            },
-            "show_author": {
-                "type": "boolean",
-                "default": true,
-                "group": "post"
-            },
-            "show_related_posts": {
-                "type": "boolean",
-                "default": true,
-                "group": "post"
             }
         }
     },

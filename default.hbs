@@ -8,53 +8,29 @@
 
     <link rel="stylesheet" href="{{asset "built/screen.css"}}">
 
+    {{#is "post"}}
+    <style>
+        .is-head-brand:not(.is-head-transparent) .gh-head .nav a,
+        .is-head-brand:not(.is-head-transparent) .gh-head-description,
+        .is-head-brand:not(.is-head-transparent) .gh-head-link,
+        .is-head-brand:not(.is-head-transparent) .gh-head-logo,
+        .is-head-brand:not(.is-head-transparent) .gh-head-logo a,
+        .is-head-brand:not(.is-head-transparent) .gh-search,
+        .is-head-brand:not(.is-head-transparent) .gh-social,
+        .is-head-brand:not(.is-head-transparent) .nav-more-toggle {
+            color: var(--jam-color) !important;
+        }
+    </style>
+    
+    {{/is}}
+
     {{ghost_head}}
 </head>
 
 <body class="{{body_class}}{{{block "body_class"}}} is-head-{{#match @custom.navigation_layout "Logo on the left"}}left-logo{{else match @custom.navigation_layout "Logo in the middle"}}middle-logo{{else}}stacked{{/match}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Elegant serif"}} has-serif-body{{/match}}{{^is "home"}}{{#if @site.cover_image}} is-head-brand{{/if}}{{/is}}">
 <div class="site">
 
-    <header id="gh-head" class="gh-head gh-outer">
-        <div class="gh-head-inner">
-            <div class="gh-head-brand">
-                <div class="gh-head-brand-wrapper">
-                    <a class="gh-head-logo" href="{{@site.url}}">
-                        {{#if @site.logo}}
-                            <img src="{{@site.logo}}" alt="{{@site.title}}">
-                        {{else}}
-                            {{@site.title}}
-                        {{/if}}
-                    </a>
-                </div>
-                <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
-                <button class="gh-burger"></button>
-            </div>
-
-            <nav class="gh-head-menu">
-                {{navigation}}
-                {{#unless @site.members_enabled}}
-                    {{#match @custom.navigation_layout "Stacked"}}
-                        <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
-                    {{/match}}
-                {{/unless}}
-            </nav>
-
-            <div class="gh-head-actions">
-                {{#unless @site.members_enabled}}
-                    {{^match @custom.navigation_layout "Stacked"}}
-                        <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
-                    {{/match}}
-                {{else}}
-                    <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
-                    <div class="gh-head-members">
-                        {{#unless @member}}
-                            <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Subscribe</a>
-                        {{/unless}}
-                    </div>
-                {{/unless}}
-            </div>
-        </div>
-    </header>
+{{> header}}
 
     {{#is "home"}}
         {{> "cover"}}

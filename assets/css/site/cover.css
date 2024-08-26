@@ -51,8 +51,7 @@ body:not(.with-full-cover) .cover {
 }
 
 .cover-description {
-    font-size: 3.6rem;
-    font-weight: 700;
+    font-size: 48px;
     line-height: 1.3;
     letter-spacing: -0.01em;
     word-break: break-word;
@@ -125,4 +124,9 @@ body:not(.with-full-cover) .cover {
     .menu-opened .cover {
         margin-top: 0;
     }
+}
+
+.cover-description p {
+    color: var(--cream-color);
+    font-family: var(--font-avenir);
 }
