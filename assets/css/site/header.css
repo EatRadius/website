@@ -114,8 +114,8 @@
 }
 
 .is-head-transparent .gh-head-btn {
-    background-color: var(--squash-color);
-    color: var(--jam-color);
+    background-color: var(--squash-color) !important;
+    color: var(--jam-color) !important;
 }
 
 @media (max-width: 767px) {

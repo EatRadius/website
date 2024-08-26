@@ -8,6 +8,20 @@
 
     <link rel="stylesheet" href="{{asset "built/screen.css"}}">
 
+{{#is "post"}}
+    <style>
+            .is-head-brand:not(.is-head-transparent) .gh-head .nav a, .is-head-brand:not(.is-head-transparent) .gh-head-description,
+    .is-head-brand:not(.is-head-transparent) .gh-head-link, .is-head-brand:not(.is-head-transparent) .gh-head-logo,
+    .is-head-brand:not(.is-head-transparent) .gh-head-logo a, .is-head-brand:not(.is-head-transparent) .gh-search,
+    .is-head-brand:not(.is-head-transparent) .gh-social, .is-head-brand:not(.is-head-transparent) .nav-more-toggle {
+    color: var(--jam-color) !important;
+    }
+    </style>
+
+    {{/is}}
+
+    
+
     {{ghost_head}}
 </head>
 

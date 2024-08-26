@@ -10,8 +10,6 @@
                     {{/if}}
                 </a>
             </div>
-            {{!-- <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{>
-                "icons/search"}}</button> --}}
             <button class="gh-burger"></button>
         </div>
 
@@ -19,8 +17,6 @@
             {{navigation}}
             {{#unless @site.members_enabled}}
             {{#match @custom.navigation_layout "Stacked"}}
-            {{!-- <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{>
-                "icons/search"}}</button> --}}
             {{/match}}
             {{/unless}}
         </nav>
@@ -28,19 +24,16 @@
         <div class="gh-head-actions">
             {{#unless @site.members_enabled}}
             {{^match @custom.navigation_layout "Stacked"}}
-            {{!-- <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{>
-                "icons/search"}}</button> --}}
             {{/match}}
             {{else}}
-            {{!-- <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{>
-                "icons/search"}}</button> --}}
             <div class="gh-head-members">
                 {{#unless @member}}
                 <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Subscribe</a>
                 {{/unless}}
             </div>
             {{/unless}}
-            <div><a href="#"><img class="instagram-logo" src="{{asset '/images/instagram.svg'}}"></a></div>
+            <div><a href="#">
+                    {{> icons/instagram}}</a></div>
         </div>
     </div>
 </header>

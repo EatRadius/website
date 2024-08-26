@@ -71,6 +71,15 @@
         "type": "text",
         "group": "homepage"
       },
+      "publication_cover_style": {
+                "type": "select",
+                "options": [
+                    "Fullscreen",
+                    "Half screen"
+                ],
+                "default": "Fullscreen",
+                "group": "homepage"
+            },
       "show_featured_posts": {
         "type": "boolean",
         "default": true,
@@ -96,11 +105,6 @@
         ],
         "default": "Expanded",
         "group": "homepage"
-      },
-      "show_related_posts": {
-        "type": "boolean",
-        "default": true,
-        "group": "post"
       }
     }
   },
