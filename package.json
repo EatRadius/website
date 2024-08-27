@@ -73,16 +73,6 @@
                 "default": "Fullscreen",
                 "group": "homepage"
             },
-            "show_featured_posts": {
-                "type": "boolean",
-                "default": true,
-                "group": "homepage"
-            },
-            "featured_title": {
-                "type": "text",
-                "default": "Featured articles",
-                "group": "homepage"
-            },
             "feed_title": {
                 "type": "text",
                 "default": "Latest",
