@@ -130,3 +130,31 @@ body:not(.with-full-cover) .cover {
     color: var(--cream-color);
     font-family: var(--font-avenir);
 }
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: brightness(75%);
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--cream-color);
+  font-family: var(--font-avenir);
+  font-size: 3.6rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  word-break: break-word;
+  text-align: center;
+}
+

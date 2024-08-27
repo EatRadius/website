@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{meta_title}}</title>
+
+    <link rel="stylesheet" href="{{asset "built/screen.css"}}">
+
+    {{!-- {{#is "post"}}
+    <style>
+        .is-head-brand:not(.is-head-transparent) .gh-head .nav a,
+        .is-head-brand:not(.is-head-transparent) .gh-head-description,
+        .is-head-brand:not(.is-head-transparent) .gh-head-link,
+        .is-head-brand:not(.is-head-transparent) .gh-head-logo,
+        .is-head-brand:not(.is-head-transparent) .gh-head-logo a,
+        .is-head-brand:not(.is-head-transparent) .gh-search,
+        .is-head-brand:not(.is-head-transparent) .gh-social,
+        .is-head-brand:not(.is-head-transparent) .nav-more-toggle {
+            color: var(--jam-color) !important;
+        }
+    </style>
+    
+    {{/is}} --}}
+
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}}{{{block "body_class"}}} is-head-{{#match @custom.navigation_layout "Logo on the left"}}left-logo{{else match @custom.navigation_layout "Logo in the middle"}}middle-logo{{else}}stacked{{/match}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Elegant serif"}} has-serif-body{{/match}}{{^is "home"}}{{#if @site.cover_image}} is-head-brand{{/if}}{{/is}}">
+<div class="site">
+
+{{> header}}
+
+    {{#is "home"}}
+        {{> "cover"}}
+        {{#if @custom.show_featured_posts}}
+            {{> "featured-posts"}}
+        {{/if}}
+    {{/is}}
+
+    <div class="site-content" style="padding-top: max(-8vmin, -5rem) !important;">
+        {{{body}}}
+    </div>
+
+    <footer class="gh-foot{{#unless @site.secondary_navigation}} no-menu{{/unless}} gh-outer">
+        <div class="gh-foot-inner gh-inner">
+            <div class="gh-copyright">
+                {{@site.title}} © {{date format="YYYY"}}
+            </div>
+            {{#if @site.secondary_navigation}}
+                <nav class="gh-foot-menu">
+                    {{navigation type="secondary"}}
+                </nav>
+            {{/if}}
+        </div>
+    </footer>
+
+</div>
+
+{{#is "post, page"}}
+    {{> "pswp"}}
+{{/is}}
+
+{{!-- Fixes 100vh issue on mobile browsers with toolbar on the bottom --}}
+<script>
+    if (document.body.classList.contains('with-full-cover') && (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform))) {
+        document.getElementsByClassName('cover')[0].style.height = window.innerHeight + 'px';
+    }
+</script>
+
+<script src="{{asset "built/main.min.js"}}"></script>
+
+{{ghost_foot}}
+
+</body>
+</html>
