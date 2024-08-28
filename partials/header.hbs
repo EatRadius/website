@@ -3,11 +3,7 @@
         <div class="gh-head-brand">
             <div class="gh-head-brand-wrapper">
                 <a class="gh-head-logo" href="{{@site.url}}">
-                    {{#if @site.logo}}
-                    <img src="{{@site.logo}}" alt="{{@site.title}}">
-                    {{else}}
-                    {{@site.title}}
-                    {{/if}}
+                    {{> icons/logo}}
                 </a>
             </div>
             <button class="gh-burger"></button>
